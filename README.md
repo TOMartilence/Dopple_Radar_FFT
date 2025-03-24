@@ -1,5 +1,3 @@
-Sure! Here's a professional and clean `README.md` you can use for your STM32 HB100 Doppler Radar Speed Detection project:
-
 ---
 
 ```markdown
