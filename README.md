@@ -1,13 +1,14 @@
+
 ---
 
 ```markdown
-🚗 HB100 Radar Speed Detection using STM32F301RB
+# 🚗 HB100 Radar Speed Detection using STM32F301RB
 
 This project measures the speed of moving objects using the **HB100 Doppler radar module**, an **STM32F301RB microcontroller**, and an **SSD1306 OLED display**. Instead of traditional pulse counting, the system uses **FFT (Fast Fourier Transform)** on analog IF output to extract frequency information and compute speed accurately.
 
 ---
 
-🔧 Features
+## 🔧 Features
 
 - ⚡️ **FFT-based speed detection**
 - 📈 Real-time analog signal sampling using **ADC**
@@ -18,7 +19,7 @@ This project measures the speed of moving objects using the **HB100 Doppler rada
 
 ---
 
-📦 Hardware Required
+## 📦 Hardware Required
 
 | Component              | Description                                    |
 |------------------------|------------------------------------------------|
@@ -31,9 +32,9 @@ This project measures the speed of moving objects using the **HB100 Doppler rada
 
 ---
 
-🛠️ Circuit Connection
+## 🛠️ Circuit Connection
 
-⚙️ HB100 to STM32
+### ⚙️ HB100 to STM32
 
 | HB100 Pin   | STM32 Pin         |
 |------------|-------------------|
@@ -41,7 +42,7 @@ This project measures the speed of moving objects using the **HB100 Doppler rada
 | GND        | GND               |
 | IF         | PA0 (ADC input) via Sallen-Key filter |
 
- 🖥️ OLED (I2C) to STM32
+### 🖥️ OLED (I2C) to STM32
 
 | OLED Pin | STM32 Pin | Note            |
 |----------|-----------|-----------------|
@@ -52,7 +53,7 @@ This project measures the speed of moving objects using the **HB100 Doppler rada
 
 ---
 
-📐 Doppler Speed Calculation
+## 📐 Doppler Speed Calculation
 
 The Doppler shift frequency is proportional to the target's speed:
 
@@ -72,7 +73,7 @@ speed_kmh = speed_mps * 3.6
 
 ---
 
-📁 File Structure
+## 📁 File Structure
 
 ```bash
 ├── Core
@@ -128,4 +129,6 @@ Electronics & Robotics Engineer | Embedded Systems Enthusiast
 
 This project is open source under the MIT License.
 ```
+
+---
 
